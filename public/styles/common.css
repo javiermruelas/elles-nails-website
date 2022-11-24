@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --main-font-weight: 400;
+    --light-font-weight: 300;
+    --bold-font-weight: 700;
+    --main-color: #FFFFFF;
+    --main-light-color: #F27C9C;
+    --main-dark-color: #A9577D;
+    --light-pink-color: #FFE0EE;
+    --dark-pink-color: #FFC1DE;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: var(--main-font-weight);
+    background: var(--main-color);
+    max-width: 1920px;
+    min-width: 320px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        min-width: 144px;
+        min-height: 60px;
+        background: transparent;
+        border: 2px solid #000000;
+        font-size: 1rem;
+        margin: 5%;
+    }
+    .sm-btn {
+        max-height: 42px;
+    }
+    .lg-btn {
+        min-height: 72px;
+        min-width: 188px;
+        font-size: 2rem;
+    }
+    button:hover {
+        border: 2px solid var(--dark-pink-color);
+        color: var(--main-light-color);
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}

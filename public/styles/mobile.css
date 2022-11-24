@@ -1,0 +1,8 @@
+/* Mobile - Any screen size with a width lower than 768px */
+@media screen and (max-width: 767px) {
+    /* Navigation Bar */
+    .open, .closed {
+        height: 90%;
+        width: 20%;
+    }
+}
